@@ -56,16 +56,61 @@
                         <li class="table__list__item">Telegram</li>
                         <li class="table__list__item">MAX</li>
                     </ol>
+                </div>
             </div>
-         </div>
-         <!-- Интересущие технологии -->
+        </div>
+        <!-- Интересущие технологии -->
         <div>
             <div class="title">Интересущие технологии</div>
             <div class="technologies">
                 <div class="technologies__item">
-                    
+                    <img src="./images/java.png" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="technologies__item">
+                    <img src="./images/phyton.png" alt="Phyton">
+                    <span>Phyton</span>
+                </div>
+                <div class="technologies__item">
+                    <img src="./images/vuejs.png" alt="VueJS">
+                    <span>VueJS</span>
+                </div>
+                <div class="technologies__item">
+                    <img src="./images/postgresql.png" alt="PostgreSQL">
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="technologies__item">
+                    <img src="./images/docker.png" alt="Docker">
+                    <span>Docker</span>
                 </div>
             </div>
+        </div>
+        <!-- Форма обратной связи -->
+        <div>
+            <div class="title">Форма обратной связи</div>
+            <form class="form" autocomplete="off" action="" method="post">
+                <!-- Верхний блок -->
+                <div>
+                    <label required="required" id="form__name">
+                        <input class="input__name" placeholder="  Ваше имя" type="text" name="name" id="name">
+                    </label>
+                </div>
+                <div>
+                    <label required="required" id="form__tel">
+                        <input class="input__tel" placeholder="  Телефон" type="tel" name="tel" id="tel">
+                    </label>
+                </div>
+                <!-- Нижний блок -->
+                 <div>
+                    <label id="form__question">
+                        <textarea class="textarea"  required="required" placeholder="  Ваш вопрос" name="question" id="question"></textarea>
+                    </label>
+                    <div class="invalid-feedback"></div>
+                </div>
+                <button class = "button" type="submit">
+                    Отправить
+                </button>
+            </form>
         </div>
     </div>
 </body>
