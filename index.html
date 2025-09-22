@@ -11,7 +11,7 @@
         <!-- Шапка -->
         <header class="header">
             <!-- Имя -->
-            <img class="header__img" src="/images/avatar.jpg" alt="Аватар пользователя">
+            <img class="header__img" src="/webprog/webprog_pj1/images/avatar.jpg" alt="Аватар пользователя">
             <div class="header__info">
                 <h1 class="name">Иван Петров</h1>
                 <p>Frontend developer</p>
@@ -86,31 +86,17 @@
             </div>
         </div>
         <!-- Форма обратной связи -->
-        <div>
-            <div class="title">Форма обратной связи</div>
-            <form class="form" autocomplete="off" action="" method="post">
-                <!-- Верхний блок -->
-                <div>
-                    <label required="required" id="form__name">
-                        <input class="input__name" placeholder="  Ваше имя" type="text" name="name" id="name">
-                    </label>
-                </div>
-                <div>
-                    <label required="required" id="form__tel">
-                        <input class="input__tel" placeholder="  Телефон" type="tel" name="tel" id="tel">
-                    </label>
-                </div>
-                <!-- Нижний блок -->
-                 <div>
-                    <label id="form__question">
-                        <textarea class="textarea"  required="required" placeholder="  Ваш вопрос" name="question" id="question"></textarea>
-                    </label>
-                    <div class="invalid-feedback"></div>
-                </div>
-                <button class = "button" type="submit">
-                    Отправить
-                </button>
-            </form>
+        <div class="title">Форма обратной связи</div>
+        <form class="form">
+            <!-- Верхний блок -->
+            <input class="form__input" placeholder="  Ваше имя" type="text">
+            <input class="form__input" placeholder="  Телефон" type="tel">
+            <!-- Нижний блок -->
+            <textarea class="form__textarea" placeholder="     
+    Ваш вопрос" rows="6"></textarea>
+        </form>
+        <div class="div__button">
+        <button class = "button" type="submit">Отправить</button>
         </div>
     </div>
 </body>
